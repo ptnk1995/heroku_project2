@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   resources :blogs
   resources :projects
   resources :users
+  resources :news
 end
 

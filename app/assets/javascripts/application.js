@@ -12,12 +12,17 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require semantic_ui/semantic_ui
-//= require bootstrap-sprockets
 //= require bootstrap
+//= require bootstrap-sprockets
+//= require turbolinks
 //= require_self
 //= require_tree .
-//= require turbolinks
+
+
+$(document).on("turbolinks:load", function () {
+  $('#gender-select').dropdown();
+});
+
 
  $(function(){
       $('.joined-member').click(function(){
@@ -64,8 +69,38 @@ $(document).ready(function() {
       $(this).parent().parent().remove();
   });
 });
-
+/*
 function changeCssForModal() {
   console.log(123);
    $(".ui .small .modal .transition .visible .active .scrolling").attr("id", "modal-show");
-}
+}*/
+
+
+$(document).ready(function () {
+  var trigger = $('.hamburger'),
+      overlay = $('.overlay'),
+     isClosed = false;
+
+    trigger.click(function () {
+      hamburger_cross();
+    });
+
+    function hamburger_cross() {
+
+      if (isClosed == true) {
+        overlay.hide();
+        trigger.removeClass('is-open');
+        trigger.addClass('is-closed');
+        isClosed = false;
+      } else {
+        overlay.show();
+        trigger.removeClass('is-closed');
+        trigger.addClass('is-open');
+        isClosed = true;
+      }
+  }
+
+  $('[data-toggle="offcanvas"]').click(function () {
+        $('#wrapper').toggleClass('toggled');
+  });
+});
