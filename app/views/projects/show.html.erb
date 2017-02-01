@@ -1,0 +1,419 @@
+<style type="text/css">
+  .trpStatus {
+    background-color: #fff;
+    -webkit-box-shadow: inset 0 0 0 2px #fcb316;
+    box-shadow: inset 0 0 0 2px #fcb316;
+}
+ .trpStatus {
+    background-color: #fff;
+    -webkit-box-shadow: inset 0 0 0 2px #fcb316;
+    box-shadow: inset 0 0 0 2px #fcb316;
+}
+.trpStatus {
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 12px;
+    height: 12px;
+    border: 2px solid white;
+    border-radius: 5em;
+}
+
+
+
+        *
+        {
+            -webkit-border-radius: 0px  !important;
+            -moz-border-radius: 0px  !important;
+            border-radius: 0px !important;
+        }
+        htlm, body
+        {
+            padding: 0;
+            margin: 0;
+            position: relative;
+        }
+        .clearFix
+        {
+            clear:both;
+        }
+        .panel.panel-chat
+        {
+            position: fixed;
+            bottom:0;
+            right:0;
+            max-width: 350px;
+            box-shadow: none;
+            -webkit-box-shadow: none;
+        }
+        .panel.panel-chat *
+        {
+            background: none;
+            border: none;
+        }
+        .panel.panel-chat .panel-heading
+        {
+            background: #4b67a8;
+            border: 1px solid #2e4588;
+            color:#FFF;
+        }
+        .panel.panel-chat .panel-heading a:nth-of-type(1)
+        {
+            text-decoration: none;
+            width: 290px;
+            color:#FFF;
+            font-weight: bold;
+            float:left;
+        }
+        .panel.panel-chat .panel-heading a:nth-of-type(2)
+        {
+            text-decoration: none;
+            max-width: 11px;
+            width: 11px;
+            color:#FFF;
+            float:right;
+        }
+        .panel.panel-chat .panel-body
+        {
+            display: none;
+            padding: 0;
+            margin: 0;
+            max-height: 250px;
+            height: 250px;
+            border-left: 1px solid #b2b2b2;
+            border-right: 1px solid #b2b2b2;
+            background: #EDEFF4;
+            overflow: auto;
+        }
+        .panel.panel-chat .panel-body::-webkit-scrollbar {
+             display: none;
+         }
+        .panel.panel-chat .panel-body .messageMe
+        {
+            border-bottom:1px dotted #b2b2b2;
+        }
+        .panel.panel-chat .panel-body .messageMe img
+         {
+             float:left;
+             max-width: 50px;
+             max-height: 50px;
+         }
+        .panel.panel-chat .panel-body .messageMe span
+        {
+            display: block;
+            float:left;
+            padding: 5px;
+            background: #FFF;
+            min-height: 50px;
+            max-width: 280px;
+            height: 50px;
+            width: 280px;
+            word-break: break-all;
+        }
+        .panel.panel-chat .panel-body .messageHer
+        {
+            border-bottom:1px dotted #b2b2b2;
+        }
+        .panel.panel-chat .panel-body .messageHer img
+        {
+            float:right;
+            max-width: 50px;
+            max-height: 50px;
+        }
+        .panel.panel-chat .panel-body .messageHer span
+        {
+            display: block;
+            float:right;
+            padding: 5px;
+            background: #FFF;
+            min-height: 50px;
+            max-width: 280px;
+            height: 50px;
+            width: 280px;
+            word-break: break-all;
+        }
+        .panel.panel-chat .panel-footer
+        {
+            display: none;
+            padding: 0;
+            margin: 0;
+            border: 1px solid #b2b2b2;
+            max-height: 75px;
+            height: 75px;
+        }
+        .panel.panel-chat .panel-footer textarea
+        {
+            margin-bottom: -5px;
+            resize: none;
+            width: 100%;
+            height: 100%;
+        }
+
+</style>
+<!-- PAGE HEADER -->
+  <section id="page-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-title">
+            <h2>Kpsum dolor sit amet, consectetur adipisicing elit.</h2>
+            <div class="post-meta text-uppercase">
+                <span>Appril 3, 2014</span>
+                <span>In <a href="">Design</a></span>
+                <span>By <a href="">Admin</a></span>
+                <span class="glyphicon glyphicon-star" style="color:#f4b942"></span>
+            <span class="glyphicon glyphicon-star" style="color:#f4b942"></span>
+            </div>
+            <button class="ui facebook button">
+              <i class="facebook icon"></i>
+              Facebook
+            </button>
+            <button class="ui twitter button">
+              <i class="twitter icon"></i>
+              Twitter
+            </button>
+            <button class="ui google plus button">
+              <i class="google plus icon"></i>
+              Google Plus
+            </button>
+            <button class="ui vk button">
+              <i class="vk icon"></i>
+              VK
+            </button>
+            <button class="ui linkedin button">
+              <i class="linkedin icon"></i>
+              LinkedIn
+            </button>
+            <button class="ui instagram button">
+              <i class="instagram icon"></i>
+              Instagram
+            </button>
+            <button class="ui youtube button">
+              <i class="youtube icon"></i>
+              YouTube
+            </button>
+            <span class="st-border"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /PAGE HEADER -->
+  <!-- BLOG -->
+  <section id="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="single-blog">
+            <article>
+              <div class="post-thumb"><img class="img-responsive" src="http://i1155.photobucket.com/albums/p555/ptnk1995/framgia_zpsk68fxmvq.png" alt=""></div>
+
+              <div class="post-article">
+                    <div class="col-md-12">
+                      <span class="feature-project">
+                      <b><%= t "feature_project" %>:</b>
+                    </span>kkkkkkkkk
+                    </div>
+                    <hr />
+                    <div class="col-md-6">
+                      <p class="text-left">
+                        <b> <%= t "server_informations" %>: </b><br />
+                        llllllll</p>
+                    </div>
+                    <div class="col-md-6">
+                      <p class="text-left">
+                        <b> <%= t "core_features" %>: </b><br />
+                         lllllllll
+                      </p>
+                    </div>
+              </div>
+            </article>
+          </div>
+          <hr>
+
+            <br/ >
+          <div class="ui labeled button" tabindex="0">
+            <div class="ui red button">
+              <i class="heart icon"></i> Like
+            </div>
+            <a class="ui basic red left pointing label">
+              1,048
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="ui" data-tooltip="Hoang Nhac Trung - Developer" style="width: 30px; margin-right: 15px; margin-top: 10px; float: left;" data-position="top right">
+            <img class="profile-circle" src="http://i1155.photobucket.com/albums/p555/ptnk1995/anh_trung_zpszxd6qpuh.png" style="height: 35px; width: 35px; border-radius: 50%; background-color: #eee;" alt="">
+            <div class="trpStatus" id="status"> </div>
+          </div>
+          <div class="ui" data-tooltip="Hoang Nhac Trung - Developer" style="width: 30px; margin-right: 15px; margin-top: 10px; float: left;" data-position="top right">
+            <img class="profile-circle" src="http://i1155.photobucket.com/albums/p555/ptnk1995/anh_trung_zpszxd6qpuh.png" style="height: 35px; width: 35px; border-radius: 50%; background-color: #eee;" alt="">
+            <div class="trpStatus" id="status"> </div>
+          </div>
+          <div class="ui" data-tooltip="Hoang Nhac Trung - Developer" style="width: 30px; margin-right: 15px; margin-top: 10px; float: left;" data-position="top right">
+            <img class="profile-circle" src="http://i1155.photobucket.com/albums/p555/ptnk1995/anh_trung_zpszxd6qpuh.png" style="height: 35px; width: 35px; border-radius: 50%; background-color: #eee;" alt="">
+            <div class="trpStatus" id="status"> </div>
+          </div>
+          <div class="ui" data-tooltip="Hoang Nhac Trung - Developer" style="width: 30px; margin-right: 15px; margin-top: 10px; float: left;" data-position="top right">
+            <img class="profile-circle" src="http://i1155.photobucket.com/albums/p555/ptnk1995/anh_trung_zpszxd6qpuh.png" style="height: 35px; width: 35px; border-radius: 50%; background-color: #eee;" alt="">
+            <div class="trpStatus" id="status"> </div>
+          </div>
+          <div class="ui" data-tooltip="Hoang Nhac Trung - Developer" style="width: 30px; margin-right: 15px; margin-top: 10px; float: left;" data-position="top right">
+            <img class="profile-circle" src="http://i1155.photobucket.com/albums/p555/ptnk1995/anh_trung_zpszxd6qpuh.png" style="height: 35px; width: 35px; border-radius: 50%; background-color: #eee;" alt="">
+            <div class="trpStatus" id="status"> </div>
+          </div>
+          <div class="ui teal button joined-member" onClick="changeCssForModal();">Show Modal</div>
+            <div class="ui small modal" >
+              <div class="ui center aligned header">Member of project</div>
+<div style="max-height: calc(100vh - 210px); overflow: auto;">
+              <div style="height: 150px;">
+                <img src="http://i1155.photobucket.com/albums/p555/ptnk1995/anh_trung_zpszxd6qpuh.png" style="float: left;">
+                <div class="description" style="float: left;width: 440px; margin-left: 50px;" >
+                  <div class="ui header">Hoang Nhac Trung - Manager</div>
+                  <p>We've grabbed the following image from the <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
+                  <p>Is it okay to use this photo?</p>
+                </div>
+              </div>
+              <div style="clear"></div>
+              <div style="height: 150px;">
+                <img src="http://i1155.photobucket.com/albums/p555/ptnk1995/anh_trung_zpszxd6qpuh.png" style="float: left;">
+                <div class="description" style="float: left;width: 440px; margin-left: 50px;" >
+                  <div class="ui header">Hoang Nhac Trung - Manager</div>
+                  <p>We've grabbed the following image from the <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
+                  <p>Is it okay to use this photo?</p>
+                </div>
+              </div>
+              <div style="clear"></div>
+              <div style="height: 150px;">
+                <img src="http://i1155.photobucket.com/albums/p555/ptnk1995/anh_trung_zpszxd6qpuh.png" style="float: left;">
+                <div class="description" style="float: left;width: 440px; margin-left: 50px;" >
+                  <div class="ui header">Hoang Nhac Trung - Manager</div>
+                  <p>We've grabbed the following image from the <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
+                  <p>Is it okay to use this photo?</p>
+                </div>
+              </div>
+              <div style="clear"></div><br />
+              <div style="height: 150px;">
+                <img src="http://i1155.photobucket.com/albums/p555/ptnk1995/anh_trung_zpszxd6qpuh.png" style="float: left;">
+                <div class="description" style="float: left;width: 440px; margin-left: 50px;" >
+                  <div class="ui header">Hoang Nhac Trung - Manager</div>
+                  <p>We've grabbed the following image from the <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
+                  <p>Is it okay to use this photo?</p>
+                </div>
+              </div>
+              <div style="clear"></div><br />
+
+</div>
+            </div>
+        </div>
+      </div>
+      <div class="ui comments">
+        <div class="comment">
+          <a class="avatar">
+            <img src="/assets/slider/framgia.png">
+          </a>
+          <div class="content">
+            <a class="author">Joe Henderson</a>
+            <div class="metadata">
+              <div class="date">1 day ago</div>
+            </div>
+            <div class="text">
+              <p>The hours, minutes and seconds stand as visible reminders that your effort put them all there. </p>
+              <p>Preserve until your next run, when the watch lets you see how Impermanent your efforts are.</p>
+            </div>
+            <div class="actions">
+              <a class="reply">Like</a>
+            </div>
+          </div>
+        </div>
+        <div class="comment">
+          <a class="avatar">
+            <img src="/assets/slider/framgia.png">
+          </a>
+          <div class="content">
+            <a class="author">Christian Rocha</a>
+            <div class="metadata">
+              <div class="date">2 days ago</div>
+            </div>
+            <div class="text">
+              I re-tweeted this.
+            </div>
+            <div class="actions">
+              <a class="reply">Like</a>
+            </div>
+          </div>
+        </div>
+        <form class="ui reply form">
+          <div class="field">
+            <textarea></textarea>
+          </div>
+          <div class="ui primary submit labeled icon button">
+            <i class="icon edit"></i> Add Comment
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+  <!-- /BLOG -->
+<div class="container">
+  <div class="row">
+      <div class="panel panel-chat">
+        <div class="panel-heading">
+            <a href="#" class="chatMinimize" onclick="return false"><span>ChatBox</span></a>
+            <a href="#" class="chatClose" onclick="return false"><i class="glyphicon glyphicon-remove"></i></a>
+            <div class="clearFix"></div>
+        </div>
+        <div class="panel-body">
+            <div class="messageMe">
+                <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" alt=""/>
+                <span>asdasdssadasdasdassssssssssssssssssssssssssssssssssssssssssdasdasd</span>
+                <div class="clearFix"></div>
+            </div>
+            <div class="messageHer">
+                <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" alt=""/>
+                <span>asdasdsassssssssssssssssssssssssssssssssssssssss</span>
+                <div class="clearFix"></div>
+            </div>
+            <div class="messageMe">
+                <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" alt=""/>
+                <span>asdasdssadasdasdassssssssssssssssssssssssssssssssssssssssssdasdasd</span>
+                <div class="clearFix"></div>
+            </div>
+            <div class="messageHer">
+                <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" alt=""/>
+                <span>asdasdsassssssssssssssssssssssssssssssssssssssss</span>
+                <div class="clearFix"></div>
+            </div>
+            <div class="messageMe">
+                <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" alt=""/>
+                <span>asdasdssadasdasdassssssssssssssssssssssssssssssssssssssssssdasdasd</span>
+                <div class="clearFix"></div>
+            </div>
+            <div class="messageHer">
+                <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" alt=""/>
+                <span>asdasdsassssssssssssssssssssssssssssssssssssssss</span>
+                <div class="clearFix"></div>
+            </div>
+            <div class="clearFix"></div>
+        </div>
+        <div class="panel-footer">
+            <textarea name="textMessage" cols="0" rows="0"></textarea>
+        </div>
+    </div>
+  </div>
+</div>
